@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bgcolor change</title>
+</head>
+<body>
+    <h1>Welcome lets change the backgroundColor</h1>
+    <input type="text" id="input" onkeyup="clr(event);" placeholder="Enter color">
+
+    <script>
+        let input=document.getElementById("input");
+       function clr(z){
+        if(z.key==='Enter'){
+            document.body.style.backgroundColor=input.value;
+ }else{
+    document.body.style.backgroundColor="white";
+ }
+       }
+    </script>
+</body>
+</html>
